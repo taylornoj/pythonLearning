@@ -21,10 +21,10 @@ NAME
 
 userInput = input("Please provide a holiday: ")
 
-print(proseString)
-print(userInput)
+# print(proseString)
+# print(userInput)
 
-# newProseString = proseString.replace("HOLIDAY", userInput)
+newProseString = proseString.replace("HOLIDAY", userInput)
 # proseString = newProseString
 
-# print(newProseString)
+print(newProseString)
