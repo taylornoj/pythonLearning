@@ -17,14 +17,13 @@ Love,
 
 NAME
 """
-# print(proseString)
+newProseString = proseString
+
+userInput = input("Please provide an occupation: ")
+newProseString = newProseString.replace("OCCUPATION", userInput)
 
 userInput = input("Please provide a holiday: ")
+newProseString = newProseString.replace("HOLIDAY", userInput)
 
-# print(proseString)
-# print(userInput)
-
-newProseString = proseString.replace("HOLIDAY", userInput)
-# proseString = newProseString
 
 print(newProseString)
