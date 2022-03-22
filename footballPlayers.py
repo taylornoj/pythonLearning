@@ -64,6 +64,9 @@ footballers.insert(lacy, "Lacy")
 # Omar is one spot behind Rebecca
 omar = footballers.index("Rebecca")
 footballers.insert(omar +1, "Omar")
-
+# Otto is 8th best in the league
+footballers.insert(7, "Otto")
+# Chauncey is 10 spots from the bottom
+footballers.insert(-10, "Chauncey")
 
 print(footballers)
