@@ -20,3 +20,6 @@ footballers = [
   "Pat"
 ]
 
+# 1. get median player ---
+# find number of players total:
+print(len(footballers))
