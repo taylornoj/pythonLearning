@@ -1,3 +1,6 @@
+from xxlimited import foo
+
+
 footballers = [
   "Mia",
   "Retta",
@@ -33,4 +36,9 @@ print(footballers[median-2:median+3])
 
 # 3. Add 'Average Player' to middle of the list
 footballers.insert(median, "Average Player")
+print(footballers[median])
+
+# 4. Find and change "Average Player" to all upper case
+averagePlayerCaps = footballers.index("Average Player")
+footballers[averagePlayerCaps] = footballers[averagePlayerCaps].upper()
 print(footballers[median])
