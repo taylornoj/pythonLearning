@@ -26,7 +26,6 @@ footballers = [
 # 1. get median player ---
 # find number of players total:
 print(len(footballers))
-
 # find median
 median = len(footballers) // 2
 print(footballers[median])
@@ -47,4 +46,13 @@ print(footballers[median])
 footballers += [
   "Steve", "Taylor", "Ellie", "Louis", "Steph"
 ]
+print(footballers)
+
+# 6. AVERAGE PLAYER is no longer in the middle - fix it!
+# delete AVERAGE PLAYER 
+del footballers[footballers.index("AVERAGE PLAYER")]
+# create new median
+median = len(footballers) // 2
+# insert AVERAGE PLAYER AGAIN
+footballers.insert(median, "AVERAGE PLAYER")
 print(footballers)
