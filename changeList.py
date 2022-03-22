@@ -1,3 +1,6 @@
+from cgi import test
+
+
 todo = [
   "Buy groceries",
   "Get haircut",
@@ -9,3 +12,5 @@ print(todo)
 # places "Wash car" at end
 todo.append("Wash car")
 print(todo) 
+
+test
