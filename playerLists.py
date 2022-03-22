@@ -26,3 +26,7 @@ print(players[6:10])
 
 # print from start of index until index 4
 print(players[:4])
+
+# print players 5 from the end; omiting second index indicates
+# the slice ends at the end of the list
+print(players[-5:])
