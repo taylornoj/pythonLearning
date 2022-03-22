@@ -42,3 +42,9 @@ print(footballers[median])
 averagePlayerCaps = footballers.index("Average Player")
 footballers[averagePlayerCaps] = footballers[averagePlayerCaps].upper()
 print(footballers[median])
+
+# 5. Add 5 more players to bottom of the list
+footballers += [
+  "Steve", "Taylor", "Ellie", "Louis", "Steph"
+]
+print(footballers)
