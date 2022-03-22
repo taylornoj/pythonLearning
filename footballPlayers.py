@@ -56,3 +56,14 @@ median = len(footballers) // 2
 # insert AVERAGE PLAYER AGAIN
 footballers.insert(median, "AVERAGE PLAYER")
 print(footballers)
+
+# 7. Five more players to add but they are ranked:
+# Lacy is one spot ahead of Hubert
+lacy = footballers.index("Hubert")
+footballers.insert(lacy, "Lacy")
+# Omar is one spot behind Rebecca
+omar = footballers.index("Rebecca")
+footballers.insert(omar +1, "Omar")
+
+
+print(footballers)
