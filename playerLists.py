@@ -20,3 +20,6 @@ players = [
 
 # print first 3
 print(players[0:3])
+
+# print index 6 - 9, stopping at index 10
+print(players[6:10])
