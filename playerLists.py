@@ -16,3 +16,7 @@ players = [
   "Pat"
 ]
 
+# LIST SLICING
+
+# print first 3
+print(players[0:3])
