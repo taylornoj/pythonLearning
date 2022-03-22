@@ -30,3 +30,7 @@ print(footballers[median])
 
 # 2. get 5 players in middle of league ---
 print(footballers[median-2:median+3])
+
+# 3. Add 'Average Player' to middle of the list
+footballers.insert(median, "Average Player")
+print(footballers[median])
