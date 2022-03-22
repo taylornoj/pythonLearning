@@ -23,3 +23,6 @@ print(players[0:3])
 
 # print index 6 - 9, stopping at index 10
 print(players[6:10])
+
+# print from start of index until index 4
+print(players[:4])
