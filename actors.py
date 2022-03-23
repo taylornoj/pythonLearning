@@ -1,29 +1,24 @@
-actors = [
-  "Nathan Fillion",
-  "Gina Torres",
-  "Alan Tudyk",
-  "Morena Baccarin",
-  "Adam Baldwin",
-  "Jewel Staite",
-  "Sean Maher",
-  "Summer Glau",
-  "Ron Glass"
-  ]
-
-roles = [
-  "Captain Malcolm Reynolds",
-  "Zoe Washburn",
-  "Hoban Washburn",
-  "Inara Serra",
-  "Jayne Cobb",
-  "Kaylee Frye",
-  "Dr. Simon Tam",
-  "River Tam",
-  "Derrial Book"
+actorRoles = [
+  ["Nathan Fillion", "Captain Malcolm Reynolds"],
+  ["Gina Torres", "Zoe Washburn"],
+  ["Alan Tudyk", "Hoban Washburn"],
+  ["Morena Baccarin", "Inara Serra"],
+  ["Adam Baldwin", "Jayne Cobb"],
+  ["Jewel Staite", "Kaylee Frye"],
+  ["Sean Maher", "Dr. Simon Tam"],
+  ["Summer Glau", "River Tam"],
+  ["Ron Glass", "Derrial Book"],
 ]
+
+
 
 print(
   """Featuring:
   _=_=_=_=_=_=_=_=_=_"""
   )
-print
+
+
+for actorRole in actorRoles:
+  actor = actorRole[0]
+  role = actorRole[1]
+  print(actor + " as " + role)
