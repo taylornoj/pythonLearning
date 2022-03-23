@@ -8,8 +8,9 @@ bacteria = "🌭"
 # make no. of generations into a variable
 generations = 10
 
-for generation in range(0, 10):
-  bacteria = bacteria + bacteria
-
-print(bacteria)
+for generation in range(0, generations):
+  bacteria = bacteria * 2
+  print(bacteria)
+  # telling Python to pause and do nothing for 0.5 seconds before next instruction
+  time.sleep(0.5)
 
