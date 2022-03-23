@@ -12,10 +12,7 @@ actorRoles = [
 
 
 
-print(
-  """Featuring:
-  _=_=_=_=_=_=_=_=_=_"""
-  )
+print("Featuring:\n_=_=_=_=_=_=_=_=_=_")
 
 
 for actorRole in actorRoles:
