@@ -8,9 +8,21 @@ instructionSteps = [
   "park on the sidewalk"
 ]
 
-instructions = "First, "
+# instructions = "First, "
+
+# for nextInstruction in instructionSteps:
+#   instructions = instructions + nextInstruction + ", then "
+
+# print(instructions + "you're there!")
+
 
 for nextInstruction in instructionSteps:
-  instructions = instructions + nextInstruction + ", then "
+  instructionStepsButScreamed = []
+  upperInstruction = nextInstruction.upper()
+  instructionStepsButScreamed.append(upperInstruction)
 
-print(instructions + "you're there!")
+print(instructionStepsButScreamed) # whole list in caps
+
+print(upperInstruction) # PARK ON THE SIDEWALK
+
+# when instructionStepsButScreamed = [] is in the for loop // ['PARK ON THE SIDEWALK']
