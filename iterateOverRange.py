@@ -5,6 +5,8 @@
 import time
 
 bacteria = "🌭"
+# make no. of generations into a variable
+generations = 10
 
 for generation in range(0, 10):
   bacteria = bacteria + bacteria
