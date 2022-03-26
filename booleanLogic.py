@@ -20,3 +20,11 @@ print(bool(cats)) # False
 
 loveDogs = True
 print(bool(loveDogs)) # True
+
+#####
+
+roomTemp = 23
+plutoSurfaceTemp = -203
+question = roomTemp < plutoSurfaceTemp
+print(bool(question)) # False
+print(bool(roomTemp < plutoSurfaceTemp)) # False
