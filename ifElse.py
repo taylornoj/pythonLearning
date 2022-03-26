@@ -7,14 +7,19 @@ cartons = [
 ]
 
 cart = []
+wrongCartonsLookedAt = 0
 
 for carton in cartons:
   typeOfMilk = carton[0]
   logo = carton[1]
   # logic branch - 'if' followed by a compound expression
-  if typeOfMilk is "Almond milk" and logo is "Right logo":
+  if typeOfMilk == "Almond milk" and logo == "Right logo":
     cart.append(carton)
     break
+  else:
+    wrongCartonsLookedAt += 1
 # alternative branch
-if len(cart) is 0:
+if len(cart) == 0:
   cart.append("Beer")
+
+print("I looked at " + str(wrongCartonsLookedAt) + " cartons that were not almond-painted-like-a-cow branch almond milk.")
