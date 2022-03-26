@@ -17,3 +17,6 @@ print(bool(numberOfDogs)) # True
 
 cats = 0
 print(bool(cats)) # False
+
+loveDogs = True
+print(bool(loveDogs)) # True
