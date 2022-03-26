@@ -1,3 +1,6 @@
+from opcode import hascompare
+
+
 dogs = ['Ellie', 'Alaska', 'Jellybean', 'Fox']
 bool(dogs)
 print(bool(dogs)) # True
@@ -51,3 +54,11 @@ print(bool(bestDog is 'Fox')) # False
 outsideTemp = 28
 sunny = True
 print("Is it over 25 and sunny?", bool(outsideTemp > 25 and sunny)) # True
+
+# using 'or' keyword where at least one has to be true
+hasCoffee = True
+hasBeer = True
+print("both are true with 'or':", bool(hasCoffee or hasBeer)) # True
+hasCoffee = False
+print("one is true, one is false with 'or':", bool(hasCoffee or hasBeer)) # True
+print("one is true and one is false with 'and':", bool(hasCoffee and hasBeer)) # False
