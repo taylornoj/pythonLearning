@@ -35,6 +35,19 @@ dogs = ['Ellie', 'Alaska', 'Jellybean', 'Fox']
 print('Ellie in dogs?', bool('Ellie' in dogs)) # True
 print('Max in dogs?', bool('Max' in dogs)) # False
  
+ ## the 'is' operator compares the thing to the left and thing to the right
+ ## to say, "are these the same thing?"
 bestDog = dogs[0] # Can change [] to any index
 print(bool(bestDog is 'Ellie')) # True
 print(bool(bestDog is 'Fox')) # False
+
+## BUT we should use == operator in place of keyword 'is'
+## 'is' is more readable but has some quirks; 
+
+#####
+
+# Grouping expressions together using 'and' keyword
+# if either side is false, whole thing is false
+outsideTemp = 28
+sunny = True
+print("Is it over 25 and sunny?", bool(outsideTemp > 25 and sunny)) # True
