@@ -10,4 +10,10 @@ dogSpeech = "Bark bark"
 print(bool(dogSpeech)) # True
 
 speechless = ""
-print(bool(speechless))
+print(bool(speechless)) # False
+
+numberOfDogs = 45342
+print(bool(numberOfDogs)) # True
+
+cats = 0
+print(bool(cats)) # False
