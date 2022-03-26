@@ -28,3 +28,10 @@ plutoSurfaceTemp = -203
 question = roomTemp < plutoSurfaceTemp
 print(bool(question)) # False
 print(bool(roomTemp < plutoSurfaceTemp)) # False
+
+#####
+
+dogs = ['Ellie', 'Alaska', 'Jellybean', 'Fox']
+print('Ellie in dogs?', bool('Ellie' in dogs)) # True
+print('Max in dogs?', bool('Max' in dogs)) # False
+ 
