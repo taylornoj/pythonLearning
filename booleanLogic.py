@@ -35,3 +35,6 @@ dogs = ['Ellie', 'Alaska', 'Jellybean', 'Fox']
 print('Ellie in dogs?', bool('Ellie' in dogs)) # True
 print('Max in dogs?', bool('Max' in dogs)) # False
  
+bestDog = dogs[0] # Can change [] to any index
+print(bool(bestDog is 'Ellie')) # True
+print(bool(bestDog is 'Fox')) # False
