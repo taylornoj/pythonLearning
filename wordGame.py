@@ -22,28 +22,42 @@ Love,
 
 NAME
 """
-newProseString = proseString
 
-userInput = input("Please provide an occupation: ")
-newProseString = newProseString.replace("OCCUPATION", userInput)
+replacements = [
+  ["Please provide an occupation: ", "OCCUPATION"],
+  ["Please provide a country: ", "COUNTRY"],
+  ["Please provide a plural noun: ", "PLURAL_NOUN"],
+  ["Please provide a verb: ", "VERB"],
+  ["Please provide an adjective: ", "ADJECTIVE"],
+  ["Please provide a personal item: ", "PERSONAL_ITEM"],
+  ["Please provide a holiday: ", "HOLIDAY"],
+  ["Please provide your name: ", "NAME"],
+  []
+]
 
-userInput = input("Please provide country: ")
-newProseString = newProseString.replace("COUNTRY", userInput)
 
-userInput = input("Please provide a plural noun: ")
-newProseString = newProseString.replace("PLURAL_NOUN", userInput)
+# newProseString = proseString
 
-userInput = input("Please provide a verb: ")
-newProseString = newProseString.replace("VERB", userInput)
+# userInput = input("Please provide an occupation: ")
+# newProseString = newProseString.replace("OCCUPATION", userInput)
 
-userInput = input("Please provide an adjective: ")
-newProseString = newProseString.replace("ADJECTIVE", userInput)
+# userInput = input("Please provide country: ")
+# newProseString = newProseString.replace("COUNTRY", userInput)
 
-userInput = input("Please provide a personal item: ")
-newProseString = newProseString.replace("PERSONAL_ITEM", userInput)
+# userInput = input("Please provide a plural noun: ")
+# newProseString = newProseString.replace("PLURAL_NOUN", userInput)
 
-userInput = input("Please provide a holiday: ")
-newProseString = newProseString.replace("HOLIDAY", userInput)
+# userInput = input("Please provide a verb: ")
+# newProseString = newProseString.replace("VERB", userInput)
+
+# userInput = input("Please provide an adjective: ")
+# newProseString = newProseString.replace("ADJECTIVE", userInput)
+
+# userInput = input("Please provide a personal item: ")
+# newProseString = newProseString.replace("PERSONAL_ITEM", userInput)
+
+# userInput = input("Please provide a holiday: ")
+# newProseString = newProseString.replace("HOLIDAY", userInput)
 
 
 
