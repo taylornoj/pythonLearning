@@ -22,14 +22,6 @@ Love,
 
 NAME
 """
-# prompt = "Please provide a country: "
-# placeholder = "COUNTRY"
-
-# userInput = input(prompt)
-
-# newProseString = proseString.replace(placeholder, userInput)
-
-# print(newProseString)
 
 replacements = [
     ["Please provide an occupation: ", "OCCUPATION"],
@@ -42,36 +34,8 @@ replacements = [
     ["Please provide your name: ", "NAME"],
 ]
 
-
 for prompt, placeholder in replacements:
   userInput = input(prompt)
   proseString = proseString.replace(placeholder, userInput)
 
 print(proseString)
-
-# newProseString = proseString
-
-# userInput = input("Please provide an occupation: ")
-# newProseString = newProseString.replace("OCCUPATION", userInput)
-
-# userInput = input("Please provide country: ")
-# newProseString = newProseString.replace("COUNTRY", userInput)
-
-# userInput = input("Please provide a plural noun: ")
-# newProseString = newProseString.replace("PLURAL_NOUN", userInput)
-
-# userInput = input("Please provide a verb: ")
-# newProseString = newProseString.replace("VERB", userInput)
-
-# userInput = input("Please provide an adjective: ")
-# newProseString = newProseString.replace("ADJECTIVE", userInput)
-
-# userInput = input("Please provide a personal item: ")
-# newProseString = newProseString.replace("PERSONAL_ITEM", userInput)
-
-# userInput = input("Please provide a holiday: ")
-# newProseString = newProseString.replace("HOLIDAY", userInput)
-
-
-
-# print(newProseString)
