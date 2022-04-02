@@ -92,6 +92,7 @@ stories = [
   showAndTell
 ]
 
+selection = int(input("Choose a story by selecting a number between 1 and 3: "))
 story = stories[0]
 proseString = story[1]
 replacements = story[2]
