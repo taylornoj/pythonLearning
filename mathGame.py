@@ -14,3 +14,6 @@ for a, b in questions:
     score += 1
   else:
     print("Wrongo!")
+
+if score > len(questions) / 2:
+  print("Great job! Your score is: " + str(score))
