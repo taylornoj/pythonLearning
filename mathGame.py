@@ -16,4 +16,4 @@ for a, b in questions:
     print("Wrongo!")
 
 if score > len(questions) / 2:
-  print("Great job! Your score is: " + str(score))
+  print("Great job! Your score is: " + str(score) + " out of " + str(len(questions)))
