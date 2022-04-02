@@ -16,4 +16,5 @@ for a, b in questions:
     print("Wrongo!")
 
 if score > len(questions) / 2:
+  # len() method returns length of the list/string, etc iterable data format in Python
   print("Great job! Your score is: " + str(score) + " out of " + str(len(questions)))
