@@ -86,6 +86,12 @@ showAndTell = [
   ]
 ]
 
+stories = [
+  letterHome,
+  sale,
+  showAndTell
+]
+
 
 
 for prompt, placeholder in replacements:
