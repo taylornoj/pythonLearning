@@ -63,6 +63,29 @@ sale = [
   ]
 ]
 
+showAndTell = [
+  #Title
+  "Show and Tell",
+
+  # Prose String
+  """
+  Have you seen my pet ANIMAL? It's the best-- No pet can VERB1 as ADVERB
+  as it can. It's NUMBER years old, and its name is NAME. You can VERB2 it
+  if you want but be careful, because it might VERB3.
+  """,
+
+  # Replacements
+  [
+    ["Please provide an animal: ", "ANIMAL"],
+    ["Please provide a verb like 'run', 'jump' or 'cry': ", "VERB1"],
+    ["Please provide an adverb like 'quickly', or 'elegantly': ", "ADVERB"],
+    ["Please provide a number: ", "NUMBER"],
+    ["Please provide a name: ", "NAME"],
+    ["Please provide a transitive verb like 'speak to' or 'notice': ", "VERB2"],
+    ["Please provide a verb: ", "VERB3"]
+  ]
+]
+
 
 
 for prompt, placeholder in replacements:
