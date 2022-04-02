@@ -58,7 +58,7 @@ sale = [
   [
     ["Please provide a number: ", "NUMBER"],
     ["Please provide a plural noun: ", "PLURAL_NOUN"],
-    ["Please provide a noun: ", "NOUN"]
+    ["Please provide a noun: ", "NOUN"],
     ["Please provide a type of metal", "METAL"]
   ]
 ]
@@ -92,7 +92,9 @@ stories = [
   showAndTell
 ]
 
-
+story = stories[0]
+proseString = story[1]
+replacements = story[2]
 
 for prompt, placeholder in replacements:
   userInput = input(prompt)
