@@ -51,7 +51,7 @@ sale = [
 
   Today only: Buy NUMBER PLURAL_NOUN and get a free NOUN!
 
-  Sign up for our exclisive METAL card and receive 50% off of your first purchase!
+  Sign up for our exclusive METAL card and receive 50% off of your first purchase!
   """,
 
   # Replacements
@@ -59,7 +59,7 @@ sale = [
     ["Please provide a number: ", "NUMBER"],
     ["Please provide a plural noun: ", "PLURAL_NOUN"],
     ["Please provide a noun: ", "NOUN"],
-    ["Please provide a type of metal", "METAL"]
+    ["Please provide a type of metal: ", "METAL"]
   ]
 ]
 
@@ -92,7 +92,12 @@ stories = [
   showAndTell
 ]
 
-selection = int(input("Choose a story: "))
+print("Select a story: ")
+for index, story in enumerate(stories):
+  title = story[0]
+  print(str(index) + " - " + title)
+
+selection = int(input("Select a story by corresponding number: "))
 story = stories[selection]
 proseString = story[1]
 replacements = story[2]
