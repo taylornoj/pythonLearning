@@ -11,3 +11,5 @@ for a, b in questions:
   response = int(input("What is the value of " + str(a) + " + " + str(b) + "? "))
   if response == a + b:
     print("Correct!")
+  else:
+    print("Wrongo!")
