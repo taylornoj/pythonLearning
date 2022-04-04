@@ -1,5 +1,8 @@
 import random
+
 choices = ["Rock", "Paper", "Scissors"]
 computer = random.choice(choices)
 
-print(computer)
+player = False
+cpu_score = 0
+player_score = 0
