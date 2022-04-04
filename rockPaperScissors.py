@@ -1,9 +1,6 @@
 import random
-from random import randint
-
 
 choices = ["Rock", "Paper", "Scissors"]
-# computer = choices[randint(0,2)]
 
 player = False
 cpu_score = 0
