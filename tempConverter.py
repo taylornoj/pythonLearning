@@ -5,6 +5,9 @@ option = int(input("Option 1 or 2: "))
 
 if option == 1:
   celsius = float(input("Temperature in Celsius: "))
+  fahrenheit = 1.8 * (celsius) + 32.0
+  fahrenheit = round(fahrenheit, 1) # f temp rounded to one decimal place
+  print("Temperature in Fahrenheit: ", fahrenheit)
 elif option == 2:
   fahrenheit = float(input("Temperature in Fahrenheit: "))
 else:
