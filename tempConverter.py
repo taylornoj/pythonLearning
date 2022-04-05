@@ -10,5 +10,8 @@ if option == 1:
   print("Temperature in Fahrenheit: ", fahrenheit)
 elif option == 2:
   fahrenheit = float(input("Temperature in Fahrenheit: "))
+  celsius = (fahrenheit - 32) / 1.8
+  celsius = round(celsius,1)
+  print("Temperature in Celsius: ", celsius)
 else:
   print("Choose option 1 or 2")
