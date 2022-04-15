@@ -12,3 +12,10 @@ layout = [
     ["O","e","e",None, "e","e","e",None, "e","e","E"]  # row 6
 ]
 
+for i, row in enumerate(layout):
+    if row[0] == "E" and row[1] == "e": 
+        print("[",i,"][0]")
+        break
+    elif row[-1] == "E" and row[-2] == "e": 
+        print("[",i,"][-1]")
+        break
