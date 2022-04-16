@@ -3,7 +3,7 @@ def find_the_gate(spots, vehicle):
     # if spots[i] == str(vehicle[0]):
     if str(vehicle[0]) == "w":
       # return spots[i]
-      return True 
+      return spots.index("W") 
     else:
       return False
   return "Number does not exist"
