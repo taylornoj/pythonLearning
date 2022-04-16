@@ -1,7 +1,9 @@
 def find_the_gate(spots, vehicle):
   for i in range(len(spots)):
-    if spots[i] == str(vehicle[0]):
-      return spots[i]
+    # if spots[i] == str(vehicle[0]):
+    if str(vehicle[0]) == "w":
+      # return spots[i]
+      return True 
     else:
       return False
   return "Number does not exist"
