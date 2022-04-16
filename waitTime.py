@@ -1,5 +1,4 @@
 
-
 landmarks = {
     "Big Ben": 12,
     "Tower Bridge": 25,
@@ -13,3 +12,10 @@ landmarks = {
     "Hyde Park": 0,
     "The View from The Shard": 14
 }
+
+quick_landmarks = {}
+for key, value in landmarks.items():
+  if value < 15:
+    quick_landmarks[key] = value
+
+print(quick_landmarks)
