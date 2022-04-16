@@ -18,4 +18,4 @@ for key, value in landmarks.items():
   if value < 15:
     quick_landmarks[key] = value
 
-print(quick_landmarks)
+print(quick_landmarks.keys())
