@@ -17,6 +17,13 @@ list_of_num = [1,2,3,4,5]
 series = pd.Series(list_of_num)
 #converting our list_of_num to a pandas series variable
 #we need to do this to use some of pandas' useful descriptive statistics functions
+```
 
+In the 21DDC we are loading data from another doc
+
+```python
+import pandas as pd
+df = pd.read_csv('fc_barcelona.csv')
+df.head() #df.head() will give the first five rows
 ```
 
