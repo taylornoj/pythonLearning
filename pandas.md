@@ -24,7 +24,9 @@ In the 21DDC we are loading data from another doc
 ```python
 import pandas as pd
 df = pd.read_csv('fc_barcelona.csv')
-df.head() #df.head() will give the first five rows
+#pd.read_csv() reads the path to a .csv files and stores it in a Pandas DataFrame (representation of data in a table)
+df.head() 
+#df.head() will give the first five rows
 ```
 ![image of data](https://github.com/taylornoj/pythonLearning/blob/main/docs/E88F879C-A7C3-4FA4-9AE5-8DFD86BBE232.jpeg?raw=true)
 
