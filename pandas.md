@@ -92,13 +92,13 @@ series.mode()   #outputs mode value in Pandas Series
 
 ```df.shape()``` gets the number of rows and columns in the dataframe
 
-```df.sort_values()``` sorts the dataframe by specific column
+```df.sort_values()``` sorts the dataframe by specific column [example ```df.sort_values(by=['column_name'], ascending = False)```]
 
 **DataFrame Column Functions**
 
-```.info()``` provides an overview of all the columns, number of non-nulls, and data types in a DataFrame
+```.info()``` provides an overview of all the columns, number of non-nulls, and data types in a DataFrame [example ```df.info()```]
 
-```.max()``` gets the max value from a column
+```.max()``` gets the max value from a column [example ```df['column_name'].max()```]
 
 ```.min()``` gets the min value from a column
 
@@ -111,3 +111,17 @@ series.mode()   #outputs mode value in Pandas Series
 ```.loc()``` gets rows (or columns) with particular labels from the index
 
 ```.iloc()``` gets rows (or columns) with particular positions in the index (only takes integers)
+
+So to answer today's questions:
+
+What is the most expensive landmark in Paris?
+```python
+df.sort_values(by="price",ascending=False)
+```
+
+What is the average wait time for all landmarks?
+```python 
+df['queue_time'].mean() 
+```
+
+
