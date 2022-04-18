@@ -26,4 +26,5 @@ import pandas as pd
 df = pd.read_csv('fc_barcelona.csv')
 df.head() #df.head() will give the first five rows
 ```
+![image of data](https://github.com/taylornoj/pythonLearning/blob/main/docs/E88F879C-A7C3-4FA4-9AE5-8DFD86BBE232.jpeg?raw=true)
 
