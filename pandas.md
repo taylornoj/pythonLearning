@@ -83,3 +83,31 @@ series.mode()   #outputs mode value in Pandas Series
 ## Challenge 8 with Paris Landmarks
 ![image of paris landmark data](https://github.com/taylornoj/pythonLearning/blob/main/docs/F6CDC0F9-FAD6-4230-926F-3A3FCDA3AA65_4_5005_c.jpeg?raw=true)
 
+## More Functions to choose from
+**DataFrame Functions**
+
+```df.describe()``` provides descriptive statistics of all numerical columns
+
+```df.unique()``` provides the number of unique items in a column
+
+```df.shape()``` gets the number of rows and columns in the dataframe
+
+```df.sort_values()``` sorts the dataframe by specific column
+
+**DataFrame Column Functions**
+
+```.info()``` provides an overview of all the columns, number of non-nulls, and data types in a DataFrame
+
+```.max()``` gets the max value from a column
+
+```.min()``` gets the min value from a column
+
+```.mean()``` get the mean value from a column
+
+```.idxmax()``` gets the integer index position of the max value from a column
+
+```.idxmin()``` gets the integer index position of the min value from a column
+
+```.loc()``` gets rows (or columns) with particular labels from the index
+
+```.iloc()``` gets rows (or columns) with particular positions in the index (only takes integers)
