@@ -81,3 +81,5 @@ series.mode()   #outputs mode value in Pandas Series
 
 ***
 ## Challenge 8 with Paris Landmarks
+![image of paris landmark data](https://github.com/taylornoj/pythonLearning/blob/main/docs/F6CDC0F9-FAD6-4230-926F-3A3FCDA3AA65_4_5005_c.jpeg?raw=true)
+
