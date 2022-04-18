@@ -28,3 +28,38 @@ df.head() #df.head() will give the first five rows
 ```
 ![image of data](https://github.com/taylornoj/pythonLearning/blob/main/docs/E88F879C-A7C3-4FA4-9AE5-8DFD86BBE232.jpeg?raw=true)
 
+Then we create variables for different data in the table:
+
+```python
+points = df.Pts
+games_played = df.MP
+wins = df.W
+losses = df.L
+attendance = df.Attendance.dropna()
+```
+
+And we use those to find answers to our challenge questions:
+
+What is the maximum amount of games Barcelona playes in 1 season?
+```python
+print(games_played.max())
+```
+
+What is the average attendance across the seasons?
+```python
+print(attendance.mean())
+```
+
+What is the difference between median value of wins and losses?
+```python
+print(wins.median() - losses.median())
+```
+
+What is the minimum number of games Barcelona managed to win in 1 season?
+```python
+print(wins.min())
+```
+What is the difference between max and min amount of points Barcelona was able to get in all seasons?
+```python
+print(points.max() - points.min())
+```
