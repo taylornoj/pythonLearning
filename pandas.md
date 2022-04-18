@@ -63,3 +63,14 @@ What is the difference between max and min amount of points Barcelona was able t
 ```python
 print(points.max() - points.min())
 ```
+
+## Functions
+series.max()    #outputs maximum value in Pandas Series
+
+series.min()    #outputs minimum value in Pandas Series
+
+series.mean()   #outputs average value in Pandas Series
+
+series.median() #outputs median value in Pandas Series
+
+series.mode()   #outputs mode value in Pandas Series
