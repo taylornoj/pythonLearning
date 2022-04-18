@@ -78,3 +78,6 @@ series.mean()   #outputs average value in Pandas Series
 series.median() #outputs median value in Pandas Series
 
 series.mode()   #outputs mode value in Pandas Series
+
+***
+## Challenge 8 with Paris Landmarks
