@@ -127,3 +127,18 @@ df['queue_time'].mean()
 
 ## Challenge 9 - Data Filtering
 A two step process where 1) we are creating a boolean condition that works as a filter and 2) we pass the data through the filter
+
+```python
+#Example - Loading Data
+user_filter = pd.read_csv('wine.csv')
+df.head()
+
+#Step 1: Create filter
+user_filter = df['Alcohol'] >= 14
+
+#Step 2: Feed the filter to the original DataFrame and store the result in a new variable
+filtered_df = df[user_filter]
+
+#Step 3: Display Variable
+filtered_df
+````
