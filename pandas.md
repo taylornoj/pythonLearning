@@ -142,3 +142,21 @@ filtered_df = df[user_filter]
 #Step 3: Display Variable
 filtered_df
 ````
+
+You can also combine step 1 and 2 in one step:
+```python
+# Step 1 and 2
+filtered_df_2 = df[df['Alcohol'] >= 14]
+```
+
+Finally, use ```len()``` to see how many rows the DataFrame has.
+
+My example from Challenge 9:
+How many wines are there in class 3?
+
+```python
+import pandas as pd
+df = pd.read_csv('wine.csv')
+filtered_df_2 = df[df['Class'] == 3]
+print(len(filtered_df_2)) # prints 48
+```
