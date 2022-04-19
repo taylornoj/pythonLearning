@@ -123,5 +123,7 @@ What is the average wait time for all landmarks?
 ```python 
 df['queue_time'].mean() 
 ```
+***
 
-
+## Challenge 9 - Data Filtering
+A two step process where 1) we are creating a boolean condition that works as a filter and 2) we pass the data through the filter
