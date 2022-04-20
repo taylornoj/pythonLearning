@@ -160,3 +160,10 @@ df = pd.read_csv('wine.csv')
 filtered_df_2 = df[df['Class'] == 3]
 print(len(filtered_df_2)) # prints 48
 ```
+
+***
+
+## Challenge 10 - Group By in Pandas
+group by function:
+- groups the dataset according to catagorical column or columns
+- grouping function can't stand on its own - user needs to apply a specific aggregate function to the dataset after using group by
