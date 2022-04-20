@@ -167,3 +167,12 @@ print(len(filtered_df_2)) # prints 48
 group by function:
 - groups the dataset according to catagorical column or columns
 - grouping function can't stand on its own - user needs to apply a specific aggregate function to the dataset after using group by
+
+Example:
+```python
+import pandas as pd
+
+df = pd.read_csv('dubai_properties_data.csv', index_col = 0)
+
+df.groupby(['quality']).mean()
+```
