@@ -175,4 +175,17 @@ import pandas as pd
 df = pd.read_csv('dubai_properties_data.csv', index_col = 0)
 
 df.groupby(['quality']).mean()
+# group dataset by quality column, then use mean() function to see the average of all numerical columns for each year
 ```
+
+Other aggregate functions to use on group bys:
+- count() – Number of non-null observations
+- sum() – Sum of values
+- mean() – Mean of values
+- median() – Arithmetic median of values
+- min() – Minimum
+- max() – Maximum
+- mode() – Mode
+- std() – Standard deviation
+- var() – Variance
+- size() - Number of rows
