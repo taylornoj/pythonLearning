@@ -189,3 +189,8 @@ Other aggregate functions to use on group bys:
 - std() – Standard deviation
 - var() – Variance
 - size() - Number of rows
+
+You can also specify the columns we want to group by:
+```df.groupby(['quality'])[['price','size_in_sqft','no_of_bedrooms']].mean()```
+or
+```df.groupby(['view_of_landmark','view_of_water'])[['price','no_of_bedrooms']].mean()```
