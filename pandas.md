@@ -194,3 +194,14 @@ You can also specify the columns we want to group by:
 ```df.groupby(['quality'])[['price','size_in_sqft','no_of_bedrooms']].mean()```
 or
 ```df.groupby(['view_of_landmark','view_of_water'])[['price','no_of_bedrooms']].mean()```
+
+Finding the neighbourhood with highest average price:
+```python
+grouped = df.groupby('neighborhood')[['price','size_in_sqft']].mean()
+grouped.sort_values('price',ascending=False).head(1)
+```
+
+Finding the neighbourhood with highest average size_in_sqft:
+```python
+grouped.sort_values('size_in_sqft',ascending=False).head(1)
+```
