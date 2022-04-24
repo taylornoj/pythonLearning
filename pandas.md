@@ -228,6 +228,31 @@ We use a Python dictionary as a parameter of the .agg() function.  The keys are 
 You can do two aggregations in one column:
 ```df.groupby(['neighborhood']).agg({'price' : ['mean','max']})```
 
+*The Challenge:*
+![challenge 11](https://github.com/taylornoj/pythonLearning/blob/main/docs/A8505081-638E-472F-B6D4-949BE0EB74D2_4_5005_c.jpeg?raw=true)
+
+Using the functions described above, which neighborhood has the biggest difference between maximum and minimum property price?
+
+```python
+grouped = df.groupby('neighborhood').agg({'price':['min','max']})
+grouped.head()
+```
+
+![challenge 11 result from .agg func](https://github.com/taylornoj/pythonLearning/blob/main/docs/807ED0F5-5332-45F0-B0D7-563D74758550_4_5005_c.jpeg?raw=true)
+
+```python
+(grouped.iloc[:,1] - grouped.iloc[:,0]).sort_values(ascending=False).head()
+```
+```
+neighborhood
+Palm Jumeirah               34375112
+Business Bay                30470000
+Jumeirah                    26300000
+Downtown Dubai              18688888
+Jumeirah Beach Residence    14110000
+```
+
+
 ***
 ## Challenge 12 - stack and unstack
 
