@@ -205,3 +205,37 @@ Finding the neighbourhood with highest average size_in_sqft:
 ```python
 grouped.sort_values('size_in_sqft',ascending=False).head(1)
 ```
+***
+## Challenge 11 - Advanced Group By Uses in Pandas
+
+wWhat if we wanted to apply different functions to different columns? Do we need to do each column individually? If you think there’s a more efficient way, you’re correct. Pandas has a better way.
+
+```python
+import pandas as pd
+df = pd.read_csv('dubai_properties_data.csv')
+
+# old way - averages of both columns were computed for each neighborhood
+df.groupby(['neighborhood'])[["price","price_per_sqft"]].mean()
+
+# new way - using the aggregate function .agg()
+df.groupby(['neighborhood']).agg({'price' : 'mean', 'price_per_sqft' : 'max'})
+```
+
+*.agg()* is used to select the aggregation we want to do for each column.  
+
+We use a Python dictionary as a parameter of the .agg() function.  The keys are the column names and the values are functions we want to apply.
+
+You can do two aggregations in one column:
+```df.groupby(['neighborhood']).agg({'price' : ['mean','max']})```
+
+***
+## Challenge 12 - stack and unstack
+
+***
+## Challenge 13 - 
+
+import pandas as pd
+df = pd.read_csv('aus_weather.csv')
+df_date = df.set_index("Date")
+df_date.head()
+df_date[df_date['Location'] == 'Melbourne']["Temp9am"].hist(edgecolor="black", linewidth=1.2)
