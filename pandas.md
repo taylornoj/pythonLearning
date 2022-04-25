@@ -275,10 +275,29 @@ print(stacked.index)
 ```
 The stack() function stacks both columns into one, and creates something we call a MultiIndex.
 
+![visual example of multiindex](https://github.com/taylornoj/pythonLearning/blob/main/docs/CC4FD7FA-80F3-4DFF-8856-5CA36192D22F.jpeg?raw=true)
+
 You can think of MultiIndex as an array of tuples where each tuple is unique
 
 A MultiIndex can be created from a list of arrays (using MultiIndex.from_arrays()), an array of tuples (using MultiIndex.from_tuples()), a crossed set of iterables (using MultiIndex.from_product()), or a DataFrame (using MultiIndex.from_frame()). 
 
+The MultiIndex is also the output of the group by method when we use it on more than one column:
+
+```python
+df = pd.DataFrame([["Southern", "Southern","Southern","Southern"], 
+                   ["Austria", "Australia", "New Zealand", "New Zealand"], 
+                   ["Sydney", "Melbourne","Auckland","Wellington"],
+                   [5.312, 5.078,1.463,0.215]],
+                  index=['hemisphere','country', 'city','population'] 
+                  ).transpose()
+
+grouped = df.groupby(["hemisphere","country"])[["population"]].mean()
+
+print(grouped.index)
+
+# Now, we can use the unstack() function to expand the MultiIndex into separate columns.
+grouped.unstack(level=1)
+```
 
 ***
 ## Challenge 13 - 
