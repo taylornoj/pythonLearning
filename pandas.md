@@ -334,7 +334,44 @@ print((unstack.iloc[:,0] - unstack.iloc[:,1])['Albury'])
 ```
 
 ***
-## Challenge 13 - 
+## Challenge 13 - Simple Plots in Pandas
+
+```python
+import pandas as pd
+
+# we load the DataFrame
+df = pd.read_csv('aus_weather.csv')
+df.head()
+
+# we can call plot() method directly on the column we want to show
+df["MaxTemp"].plot()
+```
+We can observe the values of the DataFrame’sindex on the x axis, and the values of the MaxTemp variable on the y axis
+
+Using the parameter kind in the .plot() method we can change the type of the plot.
+
+- ```kind='line'``` : line chart (default value)
+- ```kind='box'``` : boxplot
+- ```kind='hist'``` : histogram
+- ```kind='bar'``` : bar chart
+
+
+*The Challenge:*
+Use the Pandas plot function to answer these two questions:
+
+1. Using a histogram, what is the most likely temperature at 9am (Temp9am) in Melbourne?
+
+```python
+import pandas as pd
+df = pd.read_csv('aus_weather.csv')
+df = df[df["Location"] == "Melbourne"]
+df.head()
+df.Temp9am.plot(kind="hist")
+```
+
+
+
+2. Using a boxplot, does it ever rain (variable Rainfall) in Melbourne? If yes, what was the highest daily amount recorded?
 
 import pandas as pd
 df = pd.read_csv('aus_weather.csv')
