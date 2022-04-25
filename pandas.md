@@ -260,6 +260,26 @@ Jumeirah Beach Residence    14110000
 ***
 ## Challenge 12 - stack and unstack
 
+```python
+import pandas as pd
+
+# we define the dataframe
+df = pd.DataFrame([[25.69, 7692000], [5.084, 268021]],
+            index=['Australia', 'New  Zealand'],
+            columns=['population', 'area'])
+
+# we apply the function stack()
+stacked = df.stack()
+
+print(stacked.index)
+```
+The stack() function stacks both columns into one, and creates something we call a MultiIndex.
+
+You can think of MultiIndex as an array of tuples where each tuple is unique
+
+A MultiIndex can be created from a list of arrays (using MultiIndex.from_arrays()), an array of tuples (using MultiIndex.from_tuples()), a crossed set of iterables (using MultiIndex.from_product()), or a DataFrame (using MultiIndex.from_frame()). 
+
+
 ***
 ## Challenge 13 - 
 
