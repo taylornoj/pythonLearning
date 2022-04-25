@@ -309,6 +309,29 @@ Step II: Using groupby() and unstack(), compute the difference between the avera
 
 Question: What is the difference between the average temperatures in summer and winter in Adelaide, Albany and Albury?
 
+```python
+df = df[df.season.isin(["winter","summer"])]
+unstack = df.groupby(["Location","season"])[['Temp9am']].mean().unstack()
+(unstack.iloc[:,0] - unstack.iloc[:,1]).tail(6)
+
+# output
+Location
+Walpole         7.580851
+Watsonia        9.739332
+Williamtown    10.725402
+Witchcliffe     8.162081
+Wollongong      7.459804
+Woomera        13.454238
+
+print((unstack.iloc[:,0] - unstack.iloc[:,1])['Adelaide'])
+print((unstack.iloc[:,0] - unstack.iloc[:,1])['Albany'])
+print((unstack.iloc[:,0] - unstack.iloc[:,1])['Albury'])
+
+# output
+10.71286498520401
+7.395200302343159
+14.257000981580923
+```
 
 ***
 ## Challenge 13 - 
