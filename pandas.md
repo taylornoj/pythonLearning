@@ -368,8 +368,14 @@ df = df[df["Location"] == "Melbourne"]
 df.head()
 df.Temp9am.plot(kind="hist")
 ```
+![solution - bar graph](https://github.com/taylornoj/pythonLearning/blob/main/docs/3F8CA507-9D31-4E87-A7B4-AAAA6151A251_4_5005_c.jpeg?raw=true)
 
+~Sidenote~
+I used the following to show grid lines on the bar graph
 
+```python
+df_date[df_date['Location'] == 'Melbourne']["Temp9am"].hist(edgecolor="black", linewidth=1.2)
+```
 
 2. Using a boxplot, does it ever rain (variable Rainfall) in Melbourne? If yes, what was the highest daily amount recorded?
 
