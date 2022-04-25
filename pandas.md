@@ -301,6 +301,13 @@ grouped.unstack(level=1)
 
 *The Challenge:*
 
+![start of challenge table](https://github.com/taylornoj/pythonLearning/blob/main/docs/6C2169E3-1C30-4F90-B23E-878DCC8BDAB8_4_5005_c.jpeg?raw=true)
+
+Step I: Using the season column, filter the DataFrame so it contains only rows from summer and winter.
+
+Step II: Using groupby() and unstack(), compute the difference between the average temperature in summer and winter(at 9am) for all locations.
+
+Question: What is the difference between the average temperatures in summer and winter in Adelaide, Albany and Albury?
 
 
 ***
