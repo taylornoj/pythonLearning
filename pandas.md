@@ -382,7 +382,7 @@ df_date[df_date['Location'] == 'Melbourne']["Temp9am"].hist(edgecolor="black", l
 ```python
 df.Rainfall.plot(kind='box')
 ```
-
+![boxplot result](https://github.com/taylornoj/pythonLearning/blob/main/docs/02D17B1F-BA56-4842-8EA6-C4E88C62E943_4_5005_c.jpeg?raw=true)
 
 
 import pandas as pd
