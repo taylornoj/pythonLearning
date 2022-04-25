@@ -379,6 +379,12 @@ df_date[df_date['Location'] == 'Melbourne']["Temp9am"].hist(edgecolor="black", l
 
 2. Using a boxplot, does it ever rain (variable Rainfall) in Melbourne? If yes, what was the highest daily amount recorded?
 
+```python
+df.Rainfall.plot(kind='box')
+```
+
+
+
 import pandas as pd
 df = pd.read_csv('aus_weather.csv')
 df_date = df.set_index("Date")
