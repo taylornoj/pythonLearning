@@ -243,6 +243,10 @@ grouped.head()
 ```python
 (grouped.iloc[:,1] - grouped.iloc[:,0]).sort_values(ascending=False).head()
 ```
+
+.iloc[] is primarily integer position based (from 0 to length-1 of the axis) but may also be used with a boolean array
+
+So in this example we took the max [:,1] and took away the min [:,0] then sorted values to find neighbourhood with largest difference
 ```
 neighborhood
 Palm Jumeirah               34375112
